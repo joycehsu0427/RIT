@@ -1,0 +1,54 @@
+body{
+    font-family: 'Microsoft JhengHei';
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.padding-tb{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.group{
+    padding-top: 30px;
+}
+
+.w-5{
+    width: 5%;
+}
+.w-10{
+    width: 10%;
+}
+
+.w-15{
+    width: 15%;
+}
+
+.d-1{
+	flex: 65%;
+	max-width:65%;
+}
+
+.d-2{
+	flex: 40%;
+	max-width:40%;
+}
+
+.d-3{
+	flex: 0.25%;
+	max-width:0.25%;
+}
+
+#select{
+    width: 120px;
+    height: 40px;
+}
+
+@media (min-width: 768px) {
+    h1{
+        font-size: 2.4rem;
+    }
+}

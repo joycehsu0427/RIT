@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>資訊車借用系統</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background:linear-gradient(to top,#f6d2feff,#c5c1ebff,#94e1ffff)">
+    <div id="wrap">
+        <div class="container-fluid padding-tb">
+            <div class="row">
+                <div class="col-4">
+                    <p><h1>充電車借用查詢</h1></p>
+                </div>
+                <div class="d-1" align="right">
+					<a  href="https://forms.gle/z4gP442MBHy9uQPN8" class="btn btn-danger" target="_blank" >申請借用</a>
+					<h3 style="color:red">申請前請先查詢借用狀況</h3>
+					<h6>申請借用後可按重新整理顯示借用紀錄</h6>
+					<h6>如果借用狀況不是完成，就沒有借用成功</h6>
+				</div>
+                <div class="d-2">
+                    <div class="group">
+                        <label>借用時間搜尋</label>
+						<input type="date" id="date" placeholder="" oninput="date_select(value)" value="" >
+                        <select id="select">
+                            <option value="" checked>All</option>
+                            <option value="第1節">第1節</option>
+                            <option value="第2節">第2節</option>
+                            <option value="第3節">第3節</option>
+                            <option value="第4節">第4節</option>
+                            <option value="第5節">第5節</option>
+                            <option value="第6節">第6節</option>
+                            <option value="第7節">第7節</option>
+                            <option value="第8節">第8節</option>
+                        </select>
+                        <input type="submit" id="doaction" class="btn btn-primary ml-3" value="查詢">
+                    </div>
+                </div>
+				<div class="d-3">
+				</div>
+                <div class="col-12">
+                    <div class="table-responsive-md">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="w-10">登記時間</th>
+                                    <th scope="col" class="w-5"> 申請師長</th>
+                                    <th scope="col" class="w-15">借用日期</th>
+                                    <th scope="col" class="w-5"> 借用科目</th>
+                                    <th scope="col" class="w-5"> 借用班級</th>
+                                    <th scope="col" class="w-10">借用設備</th>
+                                    <th scope="col" class="w-10">借用狀況</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-data">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- js -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="js/main.js"></script>
+	<h6 align="center"><b>架設網頁者：臺北市立內湖高中第33屆學生--許景喬、吳霖宥、葉純軒</b></h6>
+</body>
+</html>
